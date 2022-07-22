@@ -2,10 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full h-screen flex justify-center items-center bg-dark text-white">
-      <div className="container max-w-[1000px]">
+    <div id="contact" className="w-full h-fit flex justify-center items-center bg-dark text-white">
+      <div className="flex flex-col justify-center items-center container max-w-[1000px]">
         <div className="">
-          <h1 className="m-auto w-fit text-brightYellow text-4xl border-b-[3px] border-brightYellow p-3 mb-10">
+          <h1 className="m-auto w-fit text-brightYellow text-4xl border-b-[1px] border-brightYellow p-3">
             Contact
           </h1>
         </div>
@@ -13,7 +13,7 @@ const Contact = () => {
         <form
           method="POST"
           action="https://getform.io/f/7e5baf3f-26ba-4ebc-894e-d3fcccfb260c"
-          className="w-full h-[500px] flex flex-col justify-center items-center"
+          className="w-full h-[400px] flex flex-col justify-center items-center"
         >
           <div className="name w-[70%]">
             <input

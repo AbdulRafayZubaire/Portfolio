@@ -7,10 +7,10 @@ const Certificates = () => {
 
   return (
     <div id="certificates" className="h-fit w-full bg-dark text-white px-10 ">
-      <div className="max-w-[1000px] container flex flex-col justify-center items-center h-full py-20">
-        <div className="w-full text-left">
-          <h1 className="w-fit text-2xl text-brightYellow border-b-[1px] p-2 my-10">
-            I have completed the Following certifications as well:{" "}
+      <div className="max-w-[1000px] container flex flex-col justify-between items-center h-full py-20">
+      <div className="w-full text-left">
+          <h1 className="text-4xl text-brightYellow border-b-[1px] w-fit py-4 mb-5">
+            Certifications
           </h1>
         </div>
 
