@@ -4,9 +4,6 @@ import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import { certificates } from "../portfolioData";
 
 const Certificates = () => {
-  const slideCertificateRight = () => {};
-
-  const slideCertificateLeft = () => {};
 
   return (
     <div id="certificates" className="h-fit w-full bg-dark text-white px-10 ">

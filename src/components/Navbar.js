@@ -20,7 +20,6 @@ const Navbar = () => {
   const toggleActive = (e)=>{
     document.querySelector(".activeNav").classList.remove("activeNav");
     const nav = e.target
-    console.log(nav);
     nav.classList.add("activeNav")
 
   }
