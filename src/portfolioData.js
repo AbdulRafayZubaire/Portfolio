@@ -67,31 +67,31 @@ const skills = [
 const certificates = [
   {
     name: "Google Technical Support Fundamentals",
-    image: "images/cert-1.png",
+    image: "images/fundamentals.png",
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/verify/RWXDSWR4L9W3",
   },
   {
     name: "System Administration and IT Infrastructure Services",
-    image: "images/cert-1.png",
+    image: "images/systemAdministration.png",
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/XG7YHVB9VK6B",
   },
   {
     name: "Operating Systems and You: Becoming a Power User",
-    image: "images/cert-1.png",
+    image: "images/operating.png",
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/4D2BW9XAAMB5",
   },
   {
     name: "The Bits and Bytes of Computer Networking",
-    image: "images/cert-1.png",
+    image: "images/bits.png",
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/5CTJVMWZ3E8V",
   },
   {
     name: "IT Security: Defense against the digital dark arts",
-    image: "images/cert-1.png",
+    image: "images/security.png",
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/QY335Z9RKVKV",
   },
