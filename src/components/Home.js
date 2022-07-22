@@ -5,15 +5,15 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div id="home" className="home w-full h-screen bg-dark">
-      <div className="container max-w-[1000px] h-full px-10 flex flex-col justify-center">
+      <div className="container max-w-[1000px] h-full px-10 flex flex-col justify-center pt-10">
         <p className="text-brightYellow text-2xl">Hi, my name is </p>
-        <h1 className="py-2 text-5xl sm:text-6xl font-bold text-white">
+        <h1 className="py-2 text-5xl sm:text-6xl font-bold text-white mb-5">
           Abdul Rafay Zubairi
         </h1>
-        <h2 className="text-4xl sm:text-7xl text-paleYellow">
+        <h2 className="text-4xl sm:text-6xl text-paleYellow tracking-widest">
           I am a full Stack Developer
         </h2>
-        <p className="py-4 max-w-[700px] text-brightYellow my-2 text-xl">
+        <p className="py-4 max-w-[700px] text-brightYellow my-2 text-xl tracking-widest">
           I am a full stack developer having expertise in building exceptional
           digital experiences. Curently, I am focused on buiding responsive full
           stack web Applications.

@@ -20,7 +20,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Your Good Name"
-              className="w-full placeholder-white text-dark text-xl p-3 border-[1px] bg-transparent border-brightYellow rounded-[5px] "
+              className="w-full placeholder-grey_3 text-white p-2 border-[1px] bg-transparent border-brightYellow rounded-[5px] "
             />
           </div>
 
@@ -29,7 +29,7 @@ const Contact = () => {
               name="email"
               type="email"
               placeholder="Email"
-              className="w-full placeholder-white text-dark text-xl p-3 border-[1px] bg-transparent border-brightYellow rounded-[5px]"
+              className="w-full placeholder-grey_3 text-white p-2 border-[1px] bg-transparent border-brightYellow rounded-[5px]"
             />
           </div>
 
@@ -40,11 +40,11 @@ const Contact = () => {
               rows={5}
               type="text"
               placeholder="Message"
-              className="w-full placeholder-white text-dark text-xl p-3 border-[1px] bg-transparent border-brightYellow rounded-[5px]"
+              className="w-full placeholder-grey_3 text-white p-2 border-[1px] bg-transparent border-brightYellow rounded-[5px]"
             />
           </div>
 
-          <button className="w-[50%] my-3 text-brightYellow text-[24px] p-2 border-brightyellow border-[1px] rounded-[15px] font-bold tracking-wider hover:text-black hover:border-brightYellow hover:bg-brightYellow hover:border-[1px] duration-300">
+          <button className="w-[30%] my-3 text-brightYellow p-2 rounded-[10px] tracking-widest border-t-[1px] hover:text-black hover:bg-brightYellow duration-300">
             Send
           </button>
         </form>
