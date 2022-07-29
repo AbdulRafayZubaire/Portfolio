@@ -95,8 +95,16 @@ const certificates = [
     description: "A Google Certificate from Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/QY335Z9RKVKV",
   },
+
+  {
+    name: "MONGO DB m001-Basics",
+    image: "images/m001-basics.png",
+    description: "A MongoDB Certificate from Mongodb University"
+    link: "https://university.mongodb.com/course_completion/dbc2235c-54b4-48aa-b394-85054f887c14?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
+  },
   
 ];
+
 
 const aboutMe =
   "I am doing Computer Science from Punjab University College of Information Technology (PUCIT). I'll be graduating in 2024. I am an experienced web developer who enjoy building websites that serve the globe for good. I have 1+ years of experience in React JS I have worked on: Ecommerce Business websites including Custom and Dynamic Websites. I follow innovations in this direction. I am always interested in new technologies and look for new opportunities in this field. I easily connect to new people and groups.I love solving problems. Before starting to work on a project, I try to look ahead of things and act accordingly.";
