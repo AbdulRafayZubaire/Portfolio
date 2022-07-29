@@ -99,7 +99,7 @@ const certificates = [
   {
     name: "MONGO DB m001-Basics",
     image: "images/m001-basics.png",
-    description: "A MongoDB Certificate from Mongodb University"
+    description: "A MongoDB Certificate from Mongodb University",
     link: "https://university.mongodb.com/course_completion/dbc2235c-54b4-48aa-b394-85054f887c14?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
   },
   
