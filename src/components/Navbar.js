@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -17,16 +18,20 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const toggleActive = (e)=>{
+  const toggleActive = (e) => {
     document.querySelector(".activeNav").classList.remove("activeNav");
-    const nav = e.target
-    nav.classList.add("activeNav")
-
-  }
+    const nav = e.target;
+    nav.classList.add("activeNav");
+  };
 
   return (
-    <div className="fixed w-full h-[60px] px-4 bg-dark flex justify-center items-center border-b-[1px] border-lightGrey">
-      <div className="container flex justify-between items-center text-white">
+    <div className="fixed w-full h-[60px] px-4 bg-dark flex justify-center items-center border-b-[1px] border-lightGrey z-10">
+      <motion.div
+        className="container flex justify-between items-center text-white"
+        initial={{y: -100}}
+        animate={{y: 0}}
+        transition={{duration: 1, type: 'spring', stiffness: 120}}
+      >
         {/* name */}
         <div>
           <span className="font-bold text-2xl text-brightYellow cursor-pointer">
@@ -41,32 +46,68 @@ const Navbar = () => {
         {/* menu */}
         <ul className="hidden md:flex justify-center items-center px-10">
           <li className="text">
-            <Link onClick={toggleActive} className="activeNav hover:text-brightYellow" to="home" smooth={true} duration={500}>
+            <Link
+              onClick={toggleActive}
+              className="activeNav hover:text-brightYellow"
+              to="home"
+              smooth={true}
+              duration={500}
+            >
               Home
             </Link>
           </li>
           <li className="">
-            <Link onClick={toggleActive} className="hover:text-brightYellow" to="about" smooth={true} duration={500}>
+            <Link
+              onClick={toggleActive}
+              className="hover:text-brightYellow"
+              to="about"
+              smooth={true}
+              duration={500}
+            >
               About
             </Link>
           </li>
           <li className="">
-            <Link onClick={toggleActive} className="hover:text-brightYellow" to="skills" smooth={true} duration={500}>
+            <Link
+              onClick={toggleActive}
+              className="hover:text-brightYellow"
+              to="skills"
+              smooth={true}
+              duration={500}
+            >
               Skills
             </Link>
           </li>
           <li className="">
-            <Link onClick={toggleActive} className="hover:text-brightYellow" to="work" smooth={true} duration={500}>
+            <Link
+              onClick={toggleActive}
+              className="hover:text-brightYellow"
+              to="work"
+              smooth={true}
+              duration={500}
+            >
               Work
             </Link>
           </li>
-          <li className="" >
-            <Link onClick={toggleActive} className="hover:text-brightYellow" to="certificates" smooth={true} duration={500}>
+          <li className="">
+            <Link
+              onClick={toggleActive}
+              className="hover:text-brightYellow"
+              to="certificates"
+              smooth={true}
+              duration={500}
+            >
               Certificates
             </Link>
           </li>
           <li className="">
-            <Link onClick={toggleActive} className="hover:text-brightYellow" to="contact" smooth={true} duration={500}>
+            <Link
+              onClick={toggleActive}
+              className="hover:text-brightYellow"
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
               Contact
             </Link>
           </li>
@@ -101,7 +142,7 @@ const Navbar = () => {
             Contact
           </li>
         </ul>
-      </div>
+      </motion.div>
       {/* Social Icons */}
       <div className="hidden lg:flex fixed flex-column left-0 top-[35%] justify-center items-center rounded-[10px]">
         <ul>

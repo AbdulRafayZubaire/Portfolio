@@ -2,6 +2,24 @@ import { useState, useEffect, React } from "react";
 import { NavItem } from "react-bootstrap";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import { certificates } from "../portfolioData";
+import {motion} from 'framer-motion';
+
+
+const certificateEffect = {
+  hidden: {
+    y: "100px",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+
+    //transition
+    transition: {
+      duration:  1
+    },
+  },
+};
 
 const Certificates = () => {
 
@@ -9,7 +27,7 @@ const Certificates = () => {
     <div id="certificates" className="h-fit w-full bg-dark text-white px-10 ">
       <div className="max-w-[1000px] container flex flex-col justify-between items-center h-full py-20">
       <div className="w-full text-left">
-          <h1 className="text-4xl text-brightYellow border-b-[1px] w-fit py-4 mb-5">
+          <h1 className="font-Sonsie text-4xl text-brightYellow border-b-[1px] w-fit py-4 mb-5">
             Certifications
           </h1>
         </div>
@@ -19,7 +37,13 @@ const Certificates = () => {
           <div className="container sm:w-[800px] max-w-[1000px] flex flex-col justify-center items-center">
             {/* Certificate item */}
             {certificates.map((item, index) => (
-              <div className="certificate sm:w-[600px] sm:h-[200px] flex flex-col sm:flex-row gap-5 justify-center items-center my-2 sm:px-5 border-b-[1px] border-b-brightYellow py-5 mb-5">
+              <motion.div className="certificate sm:w-[600px] sm:h-[200px] flex flex-col sm:flex-row gap-5 justify-center items-center my-2 sm:px-5 border-b-[1px] border-b-brightYellow py-5 mb-5 z-0"
+              layoutScroll
+              variants={certificateEffect}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{once: true, amount: 0.2}}
+              >
                 {/* certificate image */}
                 <div className="image w-[200px] border-3 border-black hover:scale-[200%] cursor-pointer duration-300">
                   <img className="" src={item.image} alt="certificates" />
@@ -37,7 +61,7 @@ const Certificates = () => {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

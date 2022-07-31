@@ -1,11 +1,55 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const contactEffect = {
+  hidden: {
+    x: "-50px",
+    opacity: 0,
+  },
+  visible: {
+    x: "0",
+    opacity: 1,
+
+    //transition
+    transition: {
+      duration: 1,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const formEffect = {
+  hidden: {
+    y: "50px",
+    opacity: 0,
+  },
+  visible: {
+    y: "0",
+    opacity: 1,
+
+    //transition
+    transition: {
+      duration:1,
+      delay: 1
+    },
+  },
+};
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full h-fit flex justify-center items-center bg-dark text-white">
-      <div className="flex flex-col justify-center items-center container max-w-[1000px]">
+    <div
+      id="contact"
+      className="w-full h-fit flex justify-center items-center bg-dark text-white"
+    >
+      <motion.div
+        className="flex flex-col justify-center items-center container max-w-[1000px]"
+        variants={contactEffect}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         <div className="">
-          <h1 className="m-auto w-fit text-brightYellow text-4xl border-b-[1px] border-brightYellow p-3">
+          <h1 className="font-Sonsie m-auto w-fit text-brightYellow text-4xl border-b-[1px] border-brightYellow p-3">
             Contact
           </h1>
         </div>
@@ -14,6 +58,10 @@ const Contact = () => {
           method="POST"
           action="https://getform.io/f/7e5baf3f-26ba-4ebc-894e-d3fcccfb260c"
           className="w-full h-[400px] flex flex-col justify-center items-center"
+          variants={formEffect}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <div className="name w-[70%]">
             <input
@@ -48,7 +96,7 @@ const Contact = () => {
             Send
           </button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

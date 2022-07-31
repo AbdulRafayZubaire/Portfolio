@@ -21,7 +21,10 @@ module.exports = {
       lightYellow: '#fff44f', 
     },
     extend: {
-
+      fontFamily:{
+        Sonsie:["Sonsie One"],
+        Roboto:["Roboto Slab"]
+      }
     },
   },
   plugins: [],
