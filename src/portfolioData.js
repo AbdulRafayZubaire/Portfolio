@@ -3,7 +3,7 @@ const projectData = [
     name: "Super Works Ecommerce",
     type: "Full stack development",
     image: "images/superworks.png",
-    link: "https://superworks.herokuapp.com/",
+    link: "https://62e6e22f07f3241f2284a91d--darling-hummingbird-a3b8a3.netlify.app/",
     code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
   },
   {
