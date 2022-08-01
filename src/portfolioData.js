@@ -7,11 +7,11 @@ const projectData = [
     code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
   },
   {
-    name: "Super Works Ecommerce",
-    type: "Full stack development",
-    image: "images/workImg.jpeg",
-    link: "https://superworks.herokuapp.com/",
-    code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
+    name: "Dummy Dashboard",
+    type: "Front end development",
+    image: "images/dashboard.png",
+    link: "https://62e7820af9d4020144025f5b--glittery-wisp-897537.netlify.app/",
+    code: "https://github.com/AbdulRafayZubaire/DashBoard-Design-frontend-",
   },
   {
     name: "Super Works Ecommerce",
