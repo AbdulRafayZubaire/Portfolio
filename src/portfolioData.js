@@ -3,14 +3,14 @@ const projectData = [
     name: "Super Works Ecommerce",
     type: "Full stack development",
     image: "images/superworks.png",
-    link: "https://62e6e22f07f3241f2284a91d--darling-hummingbird-a3b8a3.netlify.app/",
+    link: "https://superworks.herokuapp.com/",
     code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
   },
   {
     name: "Dummy Dashboard",
     type: "Front end development",
     image: "images/dashboard.png",
-    link: "https://62e7820af9d4020144025f5b--glittery-wisp-897537.netlify.app/",
+    link: "https://frontend-dashboard-dummy.netlify.app/",
     code: "https://github.com/AbdulRafayZubaire/DashBoard-Design-frontend-",
   },
   {
