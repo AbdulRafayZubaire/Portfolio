@@ -24,7 +24,7 @@ const Home = () => {
         >
           I am a full Stack Developer
         </motion.h2>
-        <p className="py-4 max-w-[700px] text-brightYellow my-2 text-xl tracking-widest">
+        <p className="py-4 max-w-[700px] text-brightYellow my-2 text-xl tracking-widest font-Roboto">
           I am a full stack developer having expertise in building exceptional
           digital experiences. Curently, I am focused on buiding responsive full
           stack web Applications.

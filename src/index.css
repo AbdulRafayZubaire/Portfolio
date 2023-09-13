@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=Roboto+Slab:wght@300&family=Sonsie+One&family=Urbanist:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&family=Rubik:wght@400&family=Sonsie+One&family=Urbanist:wght@100;200;300;400;500;600&display=swap');
 
 @layer base {
   body {
-    @apply font-[Raleway];
-    font-family: "Roboto Slab", serif;
+    /* @apply font-[Raleway]; */
+    font-family: "Rubik", serif;
     @apply box-border;
   }
   .container {

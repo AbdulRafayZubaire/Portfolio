@@ -1,6 +1,31 @@
 const projectData = [
   {
+    name: "cook-E AI",
+    application: "Mern Application",
+    type: "Full stack development",
+    image: "images/cooke.png",
+    link: "https://cook-e.netlify.app/",
+    code: "private",
+  },
+  {
+    name: "BellHopt Grocery",
+    application: "Mern Application",
+    type: "Full stack development",
+    image: "images/bellhopt.png",
+    link: "https:bellhopt.com/guest",
+    code: "private",
+  },
+  {
+    name: "BellHopt Host",
+    application: "Mern Application",
+    type: "Full stack development",
+    image: "images/bellhopt-host.png",
+    link: "https://bellhopt.com",
+    code: "private",
+  },
+  {
     name: "Super Works Ecommerce",
+    application: "Mern Application",
     type: "Full stack development",
     image: "images/superworks.png",
     link: "https://superworks.herokuapp.com/",
@@ -8,24 +33,11 @@ const projectData = [
   },
   {
     name: "Dummy Dashboard",
+    application: "React js Application",
     type: "Front end development",
     image: "images/dashboard.png",
     link: "https://frontend-dashboard-dummy.netlify.app/",
     code: "https://github.com/AbdulRafayZubaire/DashBoard-Design-frontend-",
-  },
-  {
-    name: "Super Works Ecommerce",
-    type: "Full stack development",
-    image: "images/workImg.jpeg",
-    link: "https://superworks.herokuapp.com/",
-    code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
-  },
-  {
-    name: "Super Works Ecommerce",
-    type: "Full stack development",
-    image: "images/workImg.jpeg",
-    link: "https://superworks.herokuapp.com/",
-    code: "https://github.com/AbdulRafayZubaire/Super-Works-Store",
   },
 ];
 
@@ -102,14 +114,20 @@ const certificates = [
     description: "A MongoDB Certificate from Mongodb University",
     link: "https://university.mongodb.com/course_completion/dbc2235c-54b4-48aa-b394-85054f887c14?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing",
   },
-  
+  {
+    name: "AWS Cloud Technical Essentials",
+    image: "images/aws_CTE.png",
+    description: "An AWS certificate from coursera",
+    link: "https://www.coursera.org/account/accomplishments/certificate/56TRPYKYVUYC",
+  },
+
 ];
 
 
 const aboutMe =
-  "I am doing Computer Science from Punjab University College of Information Technology (PUCIT). I'll be graduating in 2024. I am an experienced web developer who enjoy building websites that serve the globe for good. I have 1+ years of experience in React JS I have worked on: Ecommerce Business websites including Custom and Dynamic Websites. I follow innovations in this direction. I am always interested in new technologies and look for new opportunities in this field. I easily connect to new people and groups.I love solving problems. Before starting to work on a project, I try to look ahead of things and act accordingly.";
+  "I am an expert web developer who takes pleasure in constructing websites with a global impact for positive change. With over a year of hands-on experience in React JS, I have successfully worked on various projects, including custom e-commerce websites and dynamic web solutions. My passion for this field drives me to stay up-to-date with the latest innovations. I'm always on the lookout for fresh opportunities and easily connect with new people and groups. Problem-solving is my forte, and I make it a practice to anticipate and address challenges before commencing any project.";
 
 const intro =
-  "Hi. I'm Abdul Rafay, nice to meet you. Please take a look around.";
+  "Hi. I'm a Freelance FullStack Developer with over 3 years of experience.";
 
 export { skills, projectData, aboutMe, intro, certificates };
