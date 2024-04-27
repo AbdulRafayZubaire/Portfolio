@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SectionHeader from "./SectionHeader";
 
 const contactEffect = {
   hidden: {
@@ -29,8 +30,8 @@ const formEffect = {
 
     //transition
     transition: {
-      duration:1,
-      delay: 1
+      duration: 1,
+      delay: 1,
     },
   },
 };
@@ -49,9 +50,7 @@ const Contact = () => {
         viewport={{ once: true }}
       >
         <div className="">
-          <h1 className="font-Sonsie m-auto w-fit text-brightYellow text-4xl border-b-[1px] border-brightYellow p-3">
-            Contact
-          </h1>
+          <SectionHeader heading="Contact" />
         </div>
 
         <form

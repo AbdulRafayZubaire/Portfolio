@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { aboutMe, intro } from "../portfolioData";
 import { motion } from "framer-motion";
+import SectionHeader from "./SectionHeader";
 
 const heading = {
   hidden: {
@@ -19,7 +20,7 @@ const heading = {
 const aboutIntro = {
   hidden: {
     x: "-30vw",
-    opacity: 0
+    opacity: 0,
   },
   visible: {
     opacity: 1,
@@ -35,7 +36,7 @@ const aboutIntro = {
 const aboutMeDetail = {
   hidden: {
     x: "50vw",
-    opacity: 0
+    opacity: 0,
   },
   visible: {
     opacity: 1,
@@ -59,44 +60,42 @@ const About = () => {
     >
       <div className="px-10 container flex flex-col justify-center items-center h-full max-w-[1000px] text-white">
         <motion.div
-          className=" content w-full my-8 relative"
+          className=" content w-full md:my-8 relative"
           // key={0}
           variants={heading}
           initial="hidden"
           whileInView="visible"
-          viewport={{once: true}}
+          viewport={{ once: true }}
         >
-          <p className="font-Sonsie inline text-brightYellow text-5xl border-b-[1px] border-brightYellow  my-4">
-            About
-          </p>
+          <SectionHeader heading="About" />
         </motion.div>
 
-        <div className="content w-full flex md:flex-row flex-col gap-10 justify-center items-center">
+        <div className="content w-full flex md:flex-row flex-col md:gap-10 justify-center items-center">
           {/* Flex item 1 */}
 
-            <motion.div
-              className="info basis-[30%]"
-              variants={aboutIntro}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{once: true}}
-            >
-              <p className="text-3xl sm:text-left pr-10 text-brightYellow py-20 border-r-[1px]">
-                {intro}
-              </p>
-            </motion.div>
+          <motion.div
+            className="info basis-[30%]"
+            variants={aboutIntro}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <p className="md:text-3xl text-xl sm:text-left pr-10 text-brightYellow py-5 md:py-20 md:border-r-[1px]">
+              {intro}
+            </p>
+          </motion.div>
 
           {/* Flex item 2 */}
 
-            <motion.div
-              className="text-xl leading-10 basis-3/4"
-              variants={aboutMeDetail}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{once: true}}
-            >
-              "{aboutMe}"
-            </motion.div>
+          <motion.div
+            className="md:text-xl md:leading-10 leading-6 basis-3/4"
+            variants={aboutMeDetail}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            "{aboutMe}"
+          </motion.div>
         </div>
       </div>
     </motion.div>

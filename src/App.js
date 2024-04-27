@@ -12,7 +12,7 @@ import {AnimatePresence} from 'framer-motion'
 function App() {
 
   return (
-    <div className="box-border">
+    <div className="box-border bg-dark">
     <Navbar/>
     <Home/>
     <About/>

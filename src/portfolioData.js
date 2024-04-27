@@ -74,6 +74,30 @@ const skills = [
     skill: "Node",
     image: "images/node.png",
   },
+  {
+    skill: "Bootstrap",
+    image: "images/bootstrap-5-logo-icon.png"
+  },
+  {
+    skill: "Express JS",
+    image: "images/express-js-icon.png"
+  },
+  {
+    skill: "GraphQL",
+    image: "images/graphql-icon.png"
+  },
+  {
+    skill: "Next JS",
+    image: "images/nextjs-icon.png"
+  },
+  {
+    skill: "Redux Toolkit",
+    image: "images/redux-icon.png"
+  },
+  {
+    skill: "AWS",
+    image: "images/aws-icon.png"
+  },
 ];
 
 const certificates = [

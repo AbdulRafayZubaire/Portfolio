@@ -25,15 +25,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[60px] px-4 bg-dark flex justify-center items-center border-b-[1px] border-lightGrey z-10">
+    <div className="fixed top-0 w-full h-[60px] px-4 bg-dark flex justify-center items-center z-10">
       <motion.div
-        className="container flex justify-between items-center text-white"
+        className="w-full flex justify-between items-center text-white"
         initial={{y: -100}}
         animate={{y: 0}}
         transition={{duration: 1, type: 'spring', stiffness: 120}}
       >
         {/* name */}
-        <div>
+        <div className="min-w-[250px]">
           <span className="font-bold text-2xl text-brightYellow cursor-pointer">
             <Link to="home" smooth={true} duration={500}>
               {" "}
